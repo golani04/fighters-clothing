@@ -2,6 +2,11 @@ import React from 'react';
 
 import MenuItem from '../menu-item/menu-item.component';
 
+import sectionGloves from './../../assets/images/sections/gloves.jpg';
+import sectionBoots from './../../assets/images/sections/boots.jpg';
+import sectionGear from './../../assets/images/sections/gear.jpg';
+import sectionMens from './../../assets/images/sections/mens.jpg';
+import sectionWomens from './../../assets/images/sections/womens.jpg';
 import './directory.styles.scss';
 
 class Directory extends React.Component {
@@ -12,28 +17,30 @@ class Directory extends React.Component {
 			sections: [
 				{
 					title: 'gloves',
-					imageURL: '../../assets/images/gloves/gloves-section.jpg',
+					imageURL: sectionGloves,
 					id: 1,
 				},
 				{
 					title: 'boxing shoes',
-					imageURL: '../../assets/images/gloves/gloves-section.jpg',
-					id: 1,
+					imageURL: sectionBoots,
+					id: 2,
 				},
 				{
 					title: 'gear',
-					imageURL: '../../assets/images/gloves/gloves-section.jpg',
-					id: 1,
+					imageURL: sectionGear,
+					id: 3,
 				},
 				{
 					title: 'mens',
-					imageURL: '../../assets/images/gloves/gloves-section.jpg',
-					id: 1,
+					imageURL: sectionMens,
+					size: 'large',
+					id: 4,
 				},
 				{
 					title: 'womens',
-					imageURL: '../../assets/images/gloves/gloves-section.jpg',
-					id: 1,
+					imageURL: sectionWomens,
+					size: 'large',
+					id: 5,
 				},
 			],
 		};
@@ -42,8 +49,8 @@ class Directory extends React.Component {
 	render() {
 		return (
 			<div className="directory-menu">
-				{this.state.sections.map(({ title, imageURL, id }) => (
-					<MenuItem key={id} title={title} imageURL={imageURL} />
+				{this.state.sections.map(({ title, imageURL, id, size }) => (
+					<MenuItem key={id} title={title} imageURL={imageURL} size={size} />
 				))}
 			</div>
 		);
