@@ -1,12 +1,6 @@
 import React from 'react';
 
 import MenuItem from '../menu-item/menu-item.component';
-
-import sectionGloves from './../../assets/images/sections/gloves.jpg';
-import sectionBoots from './../../assets/images/sections/boots.jpg';
-import sectionGear from './../../assets/images/sections/gear.jpg';
-import sectionMens from './../../assets/images/sections/mens.jpg';
-import sectionWomens from './../../assets/images/sections/womens.jpg';
 import './directory.styles.scss';
 
 class Directory extends React.Component {
@@ -18,32 +12,32 @@ class Directory extends React.Component {
 				{
 					title: 'gloves',
 					linkURL: 'gloves',
-					imageURL: sectionGloves,
+					imageURL: '/images/sections/gloves.jpg',
 					id: 1,
 				},
 				{
 					title: 'boxing shoes',
 					linkURL: '',
-					imageURL: sectionBoots,
+					imageURL: '/images/sections/boots.jpg',
 					id: 2,
 				},
 				{
 					title: 'gear',
 					linkURL: '',
-					imageURL: sectionGear,
+					imageURL: '/images/sections/gear.jpg',
 					id: 3,
 				},
 				{
 					title: 'mens',
 					linkURL: '',
-					imageURL: sectionMens,
+					imageURL: '/images/sections/mens.jpg',
 					size: 'large',
 					id: 4,
 				},
 				{
 					title: 'womens',
 					linkURL: '',
-					imageURL: sectionWomens,
+					imageURL: '/images/sections/womens.jpg',
 					size: 'large',
 					id: 5,
 				},
